@@ -1,0 +1,78 @@
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* start from top */
+    align-items: center;
+    padding: clamp(4rem, 6vw, 6rem) 2rem 2rem 2rem;
+    color: #fff;
+    gap: 1.5rem;
+    max-width: 1000px;
+    height: 300px;
+    /* can increase slightly if needed */
+    border-radius: 30px;
+    background-color: #2E7D32;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background-color: #F57C00;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #d66c00;
+}
+
+@media (max-width: 1000px) {
+    .cta-section {
+        padding: clamp(3rem, 5vw, 4rem) 1.5rem 2rem 1.5rem;
+        height: auto;
+        gap: 1rem;
+        border-radius: 20px;
+        overflow: hidden !important;
+        max-width: 90%;
+        /* reduce max-width on smaller screens */
+        margin: 0 auto;
+        padding-bottom: 4.5rem;
+        /* ensure it stays centered */
+    }
+
+    .cta-content h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .cta-content p {
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
+        max-width: 90%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .cta-btn {
+        padding: 10px 22px;
+        font-size: 0.95rem;
+        width: auto;
+        align-self: center;
+    }
+}
